@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include 'partials/head.njk' %}
+  </head>
+  <body class="{{bodyClasses}}">
+    {% block header %}{% endblock %}
+    <main class="mainContent">
+      {% block main %}
+        {{ content | safe }}
+      {% endblock %}
+    </main>
+    {% block afterMain %}
+    {% endblock %}
+    {% include 'partials/subscribeForm.njk' %}
+    {% include 'partials/footer.njk' %}
+  </body>
+</html>

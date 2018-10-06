@@ -1,0 +1,81 @@
+.subscribeForm-inner {
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 700px;
+	padding: $spacing-scale-5 $spacing-scale-3;
+}
+
+.subscribeForm-heading {
+	@include typography(l);
+	margin-bottom: $spacing-scale-1;
+	@include mq($from: md) {
+		margin-bottom: $spacing-scale-2;
+	}
+}
+
+.subscribeForm p {
+	@include typography(body);
+  margin-bottom: $spacing-scale-3;
+	max-width: 620px;
+	@include mq($from: md) {
+		margin-bottom: $spacing-scale-4;
+	}
+}
+
+.subscribeForm-label {
+	@include typography(body);
+  margin-bottom: $spacing-scale-1;
+	display: block;
+}
+
+.subscribeForm-email {
+	text-decoration: none;
+	padding: $spacing-scale-1;
+	font-size: 1.25em;
+	color: $colour-black;
+	border: 3px solid $colour-black;
+	margin: 0 auto;
+	-webkit-appearance: none;
+	background-color: $colour-white;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: $spacing-scale-2;
+	vertical-align: top;
+	@include mq($from: md) {
+		display: inline-block;
+		max-width: 330px;
+		margin-right: $spacing-scale-1;
+	}
+	&:focus {
+		outline: 3px solid $colour-orange;
+		outline-offset: 0px;
+	}
+}
+
+.subscribeForm-button {
+	vertical-align: top;
+	font-size: em(14);
+	text-transform: uppercase;
+	line-height: 1;
+	border-radius: $spacing-scale-3;
+	padding: $spacing-scale-2 $spacing-scale-3;
+	color: $colour-black;
+	font-weight: bold;
+	border: none;
+	letter-spacing: 0.75;
+	text-align: center;
+	margin: 0 auto;
+	-webkit-appearance: none;
+	background-color: $colour-purple;
+	color: $colour-white;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: $spacing-scale-3;
+	@include mq($from: md) {
+		display: inline-block;
+		width: auto;
+	}
+	&:hover {
+		background-color: $colour-purple-dark;
+	}
+}

@@ -1,0 +1,18 @@
+.footer {
+	padding: $spacing-scale-3;
+	overflow: hidden;
+}
+
+.footer-inner {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.footer p {
+	color: $colour-black;
+	font-size: 0.94em;
+}
+
+.footer a {
+	color: $colour-black;
+}

@@ -1,0 +1,32 @@
+{% extends "layouts/default.njk" %}
+
+{% block main %}
+  <div class="basicPage">
+    <a class="sub" href="/">MaintainableCSS</a>
+    <h1>{{ title }}</h1>
+    {{ content | safe }}
+  </div>
+{% endblock %}
+
+{% block afterMain %}
+  {% if next %}
+    <div class="chapterNavigation">
+      <a rel="next" class="primaryLinkButton" href="{{next.href}}" >Next: {{next.text}}</a>
+    </div>
+  {% endif %}
+  <div class="chapters">
+    <div class="chapters-inner">
+      <h2>Chapters</h2>
+      <ol>
+        {% for chapter in collections.chapter %}
+          <li>
+            <a {% if chapter.data.id == id %} aria-current="true"{% endif %}
+              href="{{ chapter.data.permalink }}">
+                {{ chapter.data.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+{% endblock %}

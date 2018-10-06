@@ -1,0 +1,116 @@
+main {
+	padding-top: $spacing-scale-5;
+	padding-bottom: $spacing-scale-5;
+	max-width: 748px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+main .sub {
+	padding-left: $spacing-scale-3;
+	padding-right: $spacing-scale-3;
+	color: #666;
+	text-decoration: none;
+}
+
+main h1 {
+	@include typography(xl);
+	margin-bottom: $spacing-scale-3;
+	padding-left: $spacing-scale-3;
+	padding-right: $spacing-scale-3;
+	color: $colour-black;
+}
+
+main h2 {
+	@include typography(l);
+	margin-bottom: $spacing-scale-1;
+	margin-top: $spacing-scale-2;
+	padding-left: $spacing-scale-3;
+	padding-right: $spacing-scale-3;
+	color: $colour-black;
+	@include mq($from: md) {
+		// margin-bottom: $spacing-scale-2;
+	}
+}
+
+main h3 {
+	@include typography(body);
+	margin-bottom: $spacing-scale-1;
+	padding-left: $spacing-scale-3;
+	padding-right: $spacing-scale-3;
+	color: $colour-black;
+	@include mq($from: md) {
+		// margin-bottom: $spacing-scale-2;
+	}
+}
+
+main p {
+	@include typography(body);
+	margin-bottom: $spacing-scale-4;
+	padding-left: $spacing-scale-3;
+	padding-right: $spacing-scale-3;
+	color: $colour-black;
+}
+
+main ol,
+main ul {
+	margin-bottom: $spacing-scale-4;
+	padding-left: $spacing-scale-3;
+	padding-right: $spacing-scale-3;
+	color: $colour-black;
+}
+
+@media(min-width: 37.5em) {
+	main ol,
+	main ul {
+		margin-bottom: $spacing-scale-5;
+	}
+}
+
+main ol li,
+main ul li {
+	@include typography(body);
+	margin-left: $spacing-scale-4;
+	margin-bottom: $spacing-scale-1 / 2;
+	@include mq($from: md) {
+		margin-bottom: $spacing-scale-1;
+	}
+}
+
+blockquote {
+	font-style: italic;
+	margin-bottom: $spacing-scale-4;
+	color: $colour-black;
+}
+
+blockquote cite {
+	font-weight: bold;
+}
+
+main p code,
+main ul code,
+main li code {
+	font-size: 1.3em;
+	color: $colour-orange;
+}
+
+main pre {
+	font-family: Monaco,'Courier New','Courier',monospace;
+	font-size: 1.2em;
+	color: $colour-black;
+	background-color: $colour-purple-light;
+	margin-bottom: $spacing-scale-4;
+	padding: $spacing-scale-3;
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+@media(min-width: 37.5em) {
+	main pre {
+		font-size: 1.69em;
+		margin-bottom: $spacing-scale-5;
+	}
+}

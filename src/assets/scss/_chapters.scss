@@ -1,0 +1,29 @@
+.chapters {
+	background-color: #F6EBFB;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.chapters-inner {
+	max-width: 700px;
+	padding: 0 $spacing-scale-3;
+	margin: 0 auto;
+}
+
+.chapters h2 {
+	@include typography(l);
+	margin-bottom: $spacing-scale-1;
+	@include mq($from: md) {
+		margin-bottom: $spacing-scale-2;
+	}
+}
+
+.chapters ol {
+	margin-left: $spacing-scale-3;
+	@include typography(body);
+}
+
+.chapters [aria-current=true] {
+	padding-left: $spacing-scale-1;
+	font-weight: bold;
+}

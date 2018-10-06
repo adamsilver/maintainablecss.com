@@ -1,0 +1,8 @@
+<nav class="nav">
+  <ul>
+    <li><a class="{% if id == "home" %}nav-active{% endif%}" href="/">Home</a></li>
+    <li><a class="{% if id == "articles" or page.layout == "post" %}nav-active{% endif%}" href="/articles/">Articles</a></li>
+    <li><a class="{% if id == "about" %}nav-active{% endif%}" href="/about/">About</a></li>
+    <li><a class="{% if id == "signup" %}nav-active{% endif%}" href="/signup/">Newsletter</a></li>
+  </ul>
+</nav>

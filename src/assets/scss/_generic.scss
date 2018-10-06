@@ -1,0 +1,17 @@
+body {
+	border-top: 6px solid $colour-purple;
+	font-family: 'Roboto', helvetica, arial, sans-serif;
+  text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	font-size: 100%;
+}
+
+a:link,
+a:visited {
+	color: $colour-black;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+}
