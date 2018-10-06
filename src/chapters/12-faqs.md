@@ -5,15 +5,11 @@ permalink: /chapters/faqs/
 description: Your questions about MaintainableCSS are answered here.
 ---
 
-If you can't find an answer, please [raise an issue on Github](https://github.com/adamsilver/maintainablecss.com/issues/new). Thanks!
+If you can't find an answer here, [raise an issue on Github](https://github.com/adamsilver/maintainablecss.com/issues/new).
 
 ## Can I translate this?
 
-Yes. To do this:
-
-1. [Fork the repo](https://github.com/adamsilver/maintainablecss.com/).
-2. Point your (country code) domain to it.
-3. Cite the original and let me know :).
+Yes but please cite the original (that's this site) and let me know.
 
 ## What about inheritance for headings etc?
 
@@ -61,7 +57,3 @@ States and modifiers, similarly to media queries, should be located in close pro
 	.basket-heading {}
 
 	.basket-heading--someModifier {}-->
-
-## Can't find an answer here?
-
-Raise an issue on [Github](https://github.com/adamsilver/maintainablecss.com/issues/new) and I will get back to you as soon as I can. Thanks!
