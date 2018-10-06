@@ -9,10 +9,6 @@ Write CSS without worrying that overzealous, pre-existing styles will cause prob
 
 <div><a class="primaryLinkButton" href="/chapters/introduction/">Start reading</a></div>
 
-## What others say
-
-Quite a few people like it:
-
 > &ldquo;A handy little read on learning how to write modular and maintainable CSS.&rdquo;
 <br><cite>Smashing Magazine</cite>
 

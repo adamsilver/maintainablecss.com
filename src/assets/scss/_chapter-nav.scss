@@ -1,14 +1,3 @@
 .chapterNavigation {
-	margin-bottom: 60px;
-	text-align: center;
-}
-
-@media(min-width: 37.5em) {
-	.chapterNavigation {
-		margin-bottom: 80px;
-	}
-}
-
-.chapterNavigation .primaryLinkButton {
-	margin-left: 0;
+	margin-bottom: $spacing-scale-3;
 }

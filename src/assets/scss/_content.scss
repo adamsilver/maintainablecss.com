@@ -1,14 +1,13 @@
 main {
 	padding-top: $spacing-scale-5;
-	padding-bottom: $spacing-scale-5;
-	max-width: 748px;
+	max-width: 724px;
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: $spacing-scale-3;
+	padding-right: $spacing-scale-3;
 }
 
 main .sub {
-	padding-left: $spacing-scale-3;
-	padding-right: $spacing-scale-3;
 	color: #666;
 	text-decoration: none;
 }
@@ -16,8 +15,6 @@ main .sub {
 main h1 {
 	@include typography(xl);
 	margin-bottom: $spacing-scale-3;
-	padding-left: $spacing-scale-3;
-	padding-right: $spacing-scale-3;
 	color: $colour-black;
 }
 
@@ -25,8 +22,6 @@ main h2 {
 	@include typography(l);
 	margin-bottom: $spacing-scale-1;
 	margin-top: $spacing-scale-2;
-	padding-left: $spacing-scale-3;
-	padding-right: $spacing-scale-3;
 	color: $colour-black;
 	@include mq($from: md) {
 		// margin-bottom: $spacing-scale-2;
@@ -36,8 +31,6 @@ main h2 {
 main h3 {
 	@include typography(body);
 	margin-bottom: $spacing-scale-1;
-	padding-left: $spacing-scale-3;
-	padding-right: $spacing-scale-3;
 	color: $colour-black;
 	@include mq($from: md) {
 		// margin-bottom: $spacing-scale-2;
@@ -47,16 +40,12 @@ main h3 {
 main p {
 	@include typography(body);
 	margin-bottom: $spacing-scale-4;
-	padding-left: $spacing-scale-3;
-	padding-right: $spacing-scale-3;
 	color: $colour-black;
 }
 
 main ol,
 main ul {
 	margin-bottom: $spacing-scale-4;
-	padding-left: $spacing-scale-3;
-	padding-right: $spacing-scale-3;
 	color: $colour-black;
 }
 

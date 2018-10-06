@@ -14,7 +14,6 @@
 	color: $colour-white;
 
 	margin-bottom: $spacing-scale-4;
-	margin-left: $spacing-scale-3;
 	@include mq($from: md) {
 		font-size: em(16);
 	}

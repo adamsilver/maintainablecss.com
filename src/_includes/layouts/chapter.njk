@@ -6,14 +6,15 @@
     <h1>{{ title }}</h1>
     {{ content | safe }}
   </div>
-{% endblock %}
-
-{% block afterMain %}
   {% if next %}
     <div class="chapterNavigation">
       <a rel="next" class="primaryLinkButton" href="{{next.href}}" >Next: {{next.text}}</a>
     </div>
   {% endif %}
+{% endblock %}
+
+{% block afterMain %}
+
   <div class="chapters">
     <div class="chapters-inner">
       <h2>Chapters</h2>
