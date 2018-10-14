@@ -11,8 +11,9 @@
       {% endblock %}
     </main>
     {% block afterMain %}
+      {% include 'partials/subscribeForm.njk' %}
+      {% include 'partials/footer.njk' %}
     {% endblock %}
-    {% include 'partials/subscribeForm.njk' %}
-    {% include 'partials/footer.njk' %}
+
   </body>
 </html>
