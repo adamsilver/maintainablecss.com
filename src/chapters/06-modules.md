@@ -98,7 +98,7 @@ One option would be to upgrade the button component into a module as follows:
 
 	<input class="button" type="submit" value="{%raw%}{{text}}{%endraw%}">
 
-And the the CSS would be:
+And the CSS would be:
 
 	.button {}
 
