@@ -35,7 +35,7 @@ Sometimes, we may in fact want to reuse state across modules or components. For 
 
 ## What about ARIA attributes?
 
-Not all visual states can be represented by an [ARIA attribute](https://www.w3.org/TR/wai-aria/states_and_properties#attrs_widgets). For example, there's no attribute to represent `hasProducts`. Therefore, we should use them only when necessary and in *addition* to classes.
+Not all visual states can be represented by an [ARIA attribute](https://www.w3.org/WAI/PF/aria-1.1/states_and_properties#attrs_widgets). For example, there's no attribute to represent `hasProducts`. Therefore, we should use them only when necessary and in *addition* to classes.
 
 Also, using an attribute (instead of a class) selector has [less support](https://www.impressivewebs.com/attribute-selectors/). Whilst developers may consider these browsers old, insecure or irrelevant, we should avoid techniques that unnecessarily exclude users.
 
