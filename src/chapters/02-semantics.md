@@ -156,4 +156,4 @@ Atomic classes create extra code in HTML. Semantic classes result in less code. 
 
 ## Final thought
 
-Semantic classes are the cornerstone of MaintainableCSS. Without them, everything else makes little sense. Name something based on what it is and everything else falls into place.
+Semantic classes are a cornerstone of MaintainableCSS. Without them, everything else makes little sense. Name something based on what it is and everything else falls into place.
