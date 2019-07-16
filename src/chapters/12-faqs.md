@@ -1,5 +1,6 @@
 ---
 id: faqs
+number: 12
 title: FAQs
 permalink: /chapters/faqs/
 description: Your questions about MaintainableCSS are answered here.

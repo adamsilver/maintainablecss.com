@@ -1,5 +1,6 @@
 ---
 id: modules
+number: 6
 title: Modules
 permalink: /chapters/modules/
 description: Learn the differences between modules and components and how to identify them within a design. We'll also code up some example modules together.
@@ -42,23 +43,23 @@ We'll simplify this basket for brevity. Each product within the basket will disp
 
 The basket template might be:
 
-	<div class="basket">
-	  <h1 class="basket-title">Your basket</h1>
-	  <div class="basket-item">
+    <div class="basket">
+	    <h1 class="basket-title">Your basket</h1>
+	    <div class="basket-item">
 	      <h3 class="basket-productTitle">Product title</h3>
-          <form>
-              <input type="submit" class="basket-removeButton" value="Remove">
+	      <form>
+	        <input type="submit" class="basket-removeButton" value="Remove">
 	      </form>
-	  </div>
-	</div>
+	    </div>
+    </div>
 
 And the CSS would be:
 
-	.basket {}
-	.basket-title {}
-	.basket-item {}
-	.basket-productTitle {}
-	.basket-removeButton {}
+		.basket {}
+		.basket-title {}
+		.basket-item {}
+		.basket-productTitle {}
+		.basket-removeButton {}
 
 ## 2. Creating an order summary module
 

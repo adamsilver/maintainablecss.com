@@ -1,27 +1,10 @@
 .header {
-	border-top: 6px solid $colour-purple;
-}
-
-.header-inner {
-	overflow: hidden;
 	padding: $spacing-scale-2 $spacing-scale-3 ($spacing-scale-2 - 6);
-	max-width: 700px;
-	margin: 0 auto;
+	margin: 0 auto 40px;
 }
 
 .logo {
-	font-size: em(16);
-	line-height: 1;
-	text-align: center;
-}
-
-@media(min-width: 21.25em) {
-	.logo {
-		float: left;
-	}
-}
-
-.logo a {
 	text-decoration: none;
+	display: inline-block;
 	font-weight: bold;
 }

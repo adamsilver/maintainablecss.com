@@ -6,7 +6,6 @@
 	letter-spacing: 0.75;
 	display: inline-block;
 	text-decoration: none;
-	border-radius: $spacing-scale-3;
 	padding: $spacing-scale-2 $spacing-scale-3;
 	font-weight: bold;
 	text-align: center;
@@ -21,4 +20,9 @@
 
 .primaryLinkButton:hover {
 	background-color: $colour-purple-dark;
+}
+
+.primaryLinkButton:focus {
+	outline: 3px solid $colour-orange;
+	outline-offset: 0px;
 }

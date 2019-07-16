@@ -1,5 +1,6 @@
 ---
 id: introduction
+number: 1
 title: Introduction
 permalink: /chapters/introduction/
 description: An introduction to MaintainableCSS, an approach to writing modular, scalable and of course maintainable CSS.

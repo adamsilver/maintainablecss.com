@@ -1,5 +1,6 @@
 ---
 id: reuse
+number: 3
 title: Reuse
 permalink: /chapters/reuse/
 description: Learn why avoiding reuse and embracing repetition makes CSS maintenance easier.

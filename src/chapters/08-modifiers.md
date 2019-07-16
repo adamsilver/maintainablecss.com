@@ -1,5 +1,6 @@
 ---
 id: modifiers
+number: 8
 title: Modifiers
 permalink: /chapters/modifiers/
 description: Use modifiers to change appearance based on slight differences.

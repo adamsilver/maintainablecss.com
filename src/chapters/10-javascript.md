@@ -1,5 +1,6 @@
 ---
 id: javascript
+number: 10
 title: Javascript
 permalink: /chapters/javascript/
 description: How to write maintainable CSS and maintainable Javascript at the same time.

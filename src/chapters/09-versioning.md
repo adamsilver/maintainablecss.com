@@ -1,5 +1,6 @@
 ---
 id: versioning
+number: 9
 title: Versioning
 permalink: /chapters/versioning/
 description: Learn how MaintainableCSS makes it really easy to upgrade and AB test modules for rapidly evolving websites.

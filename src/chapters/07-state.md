@@ -1,5 +1,6 @@
 ---
 id: state
+number: 7
 title: State
 permalink: /chapters/state/
 description: Learn how to provide different styles to your modules and components based on state, such as showing, hiding and loading.
@@ -10,12 +11,12 @@ next:
 
 Quite often, particularly with richer user interfaces, styling needs to be applied in response to an element's change of state. For example, we may have different styles when a module (or component) is:
 
-- showing or hiding
-- active or inactive
-- disabled or enabled
-- loading or loaded
-- hasProducts or hasNoProducts
-- isEmpty or isFull
+- `showing` or `hiding`
+- `active` or `inactive`
+- `disabled` or `enabled`
+- `loading` or `loaded`
+- `hasProducts` or `hasNoProducts`
+- `isEmpty` or `isFull`
 
 To represent state we need an additional class which should be added to the module (or component) element to which it pertains. For example, if our basket module needs a gray background when it's empty, the HTML should be:
 

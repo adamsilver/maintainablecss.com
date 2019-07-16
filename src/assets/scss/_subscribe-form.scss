@@ -57,7 +57,6 @@
 	font-size: em(14);
 	text-transform: uppercase;
 	line-height: 1;
-	border-radius: $spacing-scale-3;
 	padding: $spacing-scale-2 $spacing-scale-3;
 	color: $colour-black;
 	font-weight: bold;
@@ -70,12 +69,15 @@
 	color: $colour-white;
 	width: 100%;
 	box-sizing: border-box;
-	border-radius: $spacing-scale-3;
 	@include mq($from: md) {
 		display: inline-block;
 		width: auto;
 	}
 	&:hover {
 		background-color: $colour-purple-dark;
+	}
+	&:focus {
+		outline: 3px solid $colour-orange;
+		outline-offset: 0px;
 	}
 }

@@ -1,8 +1,14 @@
 {% extends "layouts/default.njk" %}
 
+{% block header %}
+  <header class="header">
+    <a class="logo" href="/">MaintainableCSS</a>
+  </header>
+{% endblock %}
+
 {% block main %}
   <div class="basicPage">
-    <a class="sub" href="/">MaintainableCSS</a>
+    <span class="chapterNumber">Chapter {{number}}</span>
     <h1>{{ title }}</h1>
     {{ content | safe }}
   </div>

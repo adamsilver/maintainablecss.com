@@ -1,5 +1,6 @@
 ---
 id: organisation
+number: 11
 title: Organisation
 permalink: /chapters/organisation/
 description: Learn how to organise your CSS files.

@@ -1,5 +1,6 @@
 ---
 id: conventions
+number: 5
 title: Conventions
 permalink: /chapters/conventions/
 description: Learn the simple conventions that MaintainableCSS employs to write modules, components and state.

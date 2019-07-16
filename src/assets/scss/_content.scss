@@ -7,9 +7,13 @@ main {
 	padding-right: $spacing-scale-3;
 }
 
-main .sub {
+.chapterNumber {
 	color: #666;
-	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+	font-weight: bold;
+	margin-bottom: 5px;
+	display: block;
 }
 
 main h1 {
@@ -84,17 +88,13 @@ main li code {
 }
 
 main pre {
+	overflow-x: scroll;
 	font-family: Monaco,'Courier New','Courier',monospace;
 	font-size: 1.2em;
 	color: $colour-black;
 	background-color: $colour-purple-light;
 	margin-bottom: $spacing-scale-4;
 	padding: $spacing-scale-3;
-	white-space: pre-wrap;       /* css-3 */
-	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-	white-space: -pre-wrap;      /* Opera 4-6 */
-	white-space: -o-pre-wrap;    /* Opera 7 */
-	word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
 @media(min-width: 37.5em) {

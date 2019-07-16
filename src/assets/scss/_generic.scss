@@ -16,3 +16,8 @@ a:hover,
 a:focus {
 	text-decoration: none;
 }
+
+a:focus {
+	outline: 3px solid $colour-orange;
+	outline-offset: 0px;
+}
