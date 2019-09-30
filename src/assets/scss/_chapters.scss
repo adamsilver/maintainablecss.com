@@ -11,7 +11,10 @@
 }
 
 .chapters h2 {
-	@include typography(l);
+	@include typography(body);
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+	color: #7d5a88;
 	margin-bottom: $spacing-scale-1;
 	@include mq($from: md) {
 		margin-bottom: $spacing-scale-2;
@@ -23,7 +26,10 @@
 	@include typography(body);
 }
 
+.chapters a {
+	text-decoration: none;
+}
+
 .chapters [aria-current=true] {
-	padding-left: $spacing-scale-1;
 	font-weight: bold;
 }

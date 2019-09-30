@@ -33,7 +33,7 @@ Semantic classes don't convey their styles, but that's fine—that's what CSS is
 
 Let's look at why semantic classes usually work best.
 
-## 1. Because they are readable
+## 1. Because they're readable
 
 Here's a real snippet of HTML using atomic classes:
 
@@ -62,7 +62,7 @@ Here's the same HTML with semantic classes:
 - The content is no longer obfuscated
 - The HTML is half the size
 
-## 2. Because it's easier to build responsive sites
+## 2. Because they make it easier to build responsive sites
 
 Imagine coding a two-column responsive grid whereby:
 
@@ -95,15 +95,15 @@ With semantic classes it looks like this:
 
 > Question: how valuable is a codified responsive grid system? A [layout should adapt to the content](http://adamsilver.io/articles/stop-using-device-breakpoints/), not the other way around.
 
-## 3. Because they are easier to find
+## 3. Because they're easier to find
 
 Searching HTML with non-semantic classes yields many results. Searching HTML with semantic classes should yield one result which makes it quick to track down.
 
-## 4. Because they eliminate the risk of regression
+## 4. Because they reduce the chance of regression
 
 Updating a non-semantic class could cause regression across multiple elements. Updating a semantic class only applies to the specific module, eliminating the risk of regression.
 
-## 5. Because visual classes aren't worth it
+## 5. Because visual classes aren't necessarily valuable
 
 Atomic CSS and inline CSS aren't totally equivalent. For example, inline CSS can't use media queries and styling in HTML stops us from being able to cache it.
 
@@ -127,13 +127,13 @@ We can't use non-semantic classes to target specific elements. And adding hooks 
 
 We can't use non-semantic classes to target specific elements in order to enhance them with JavaScript.
 
-## 8. Because they don't need maintaining
+## 8. Because they need less maintaining
 
 When you name an element based on what it is, you don't have to update the HTML. That's because, a heading, for example, is always a heading, no matter what it looks like.
 
 With visual classes, both the HTML and the CSS need updating—assuming there aren't any selectors available for use.
 
-## 9. Because they are easier to debug
+## 9. Because they're easier to debug
 
 Inspecting an element with multiple atomic classes, means having to wade through many selectors. With a semantic class, there's only one which is much easier to work with.
 

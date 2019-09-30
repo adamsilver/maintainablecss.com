@@ -5,8 +5,10 @@
 
 .footer-inner {
 	max-width: 724px;
-	padding: 0 $spacing-scale-3;
 	margin: 0 auto;
+	@include mq($from: lg) {
+		padding: 0 $spacing-scale-3;
+	}
 }
 
 .footer p {
