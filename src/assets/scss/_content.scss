@@ -8,7 +8,7 @@ main {
 }
 
 .chapterNumber {
-	color: #666;
+	color: $colour-grey-600;
 	text-transform: uppercase;
 	letter-spacing: 0.03em;
 	font-weight: bold;
@@ -19,14 +19,14 @@ main {
 main h1 {
 	@include typography(xl);
 	margin-bottom: $spacing-scale-3;
-	color: $colour-black;
+	color: $colour-grey-900;
 }
 
 main h2 {
 	@include typography(l);
 	margin-bottom: $spacing-scale-1;
 	margin-top: $spacing-scale-2;
-	color: $colour-black;
+	color: $colour-grey-900;
 	@include mq($from: md) {
 		// margin-bottom: $spacing-scale-2;
 	}
@@ -35,7 +35,7 @@ main h2 {
 main h3 {
 	@include typography(body);
 	margin-bottom: $spacing-scale-1;
-	color: $colour-black;
+	color: $colour-grey-900;
 	@include mq($from: md) {
 		// margin-bottom: $spacing-scale-2;
 	}
@@ -44,13 +44,13 @@ main h3 {
 main p {
 	@include typography(body);
 	margin-bottom: $spacing-scale-4;
-	color: $colour-black;
+	color: $colour-grey-900;
 }
 
 main ol,
 main ul {
 	margin-bottom: $spacing-scale-4;
-	color: $colour-black;
+	color: $colour-grey-900;
 }
 
 @media(min-width: 37.5em) {
@@ -73,7 +73,7 @@ main ul li {
 blockquote {
 	font-style: italic;
 	margin-bottom: $spacing-scale-4;
-	color: $colour-black;
+	color: $colour-grey-900;
 }
 
 blockquote cite {
@@ -84,17 +84,18 @@ main p code,
 main ul code,
 main li code {
 	font-size: 1.3em;
-	color: $colour-orange;
+	color: $colour-yellow-600;
 }
 
 main pre {
 	overflow-x: scroll;
 	font-family: Monaco,'Courier New','Courier',monospace;
 	font-size: 1.2em;
-	color: $colour-black;
-	background-color: $colour-purple-light;
+	color: $colour-yellow-800;
+	background-color: $colour-yellow-100;
 	margin-bottom: $spacing-scale-4;
-	padding: $spacing-scale-3;
+	border-left: 5px solid $colour-yellow-500;
+	padding: 10px 15px;
 }
 
 @media(min-width: 37.5em) {

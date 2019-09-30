@@ -1,5 +1,5 @@
 .chapters {
-	background-color: #faf7fb;
+	background-color: $colour-teal-100;
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
@@ -14,7 +14,7 @@
 	@include typography(body);
 	text-transform: uppercase;
 	letter-spacing: 0.03em;
-	color: #7d5a88;
+	color: $colour-teal-600;
 	margin-bottom: $spacing-scale-1;
 	@include mq($from: md) {
 		margin-bottom: $spacing-scale-2;

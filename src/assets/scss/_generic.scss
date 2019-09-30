@@ -1,5 +1,5 @@
 body {
-	border-top: 6px solid $colour-purple;
+	border-top: 6px solid $colour-teal-600;
 	font-family: 'Roboto', helvetica, arial, sans-serif;
 	font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue,Fira Sans,sans-serif!important;
   text-rendering: optimizeLegibility;
@@ -9,7 +9,7 @@ body {
 
 a:link,
 a:visited {
-	color: $colour-black;
+	color: $colour-grey-900;
 }
 
 a:hover,
@@ -18,6 +18,6 @@ a:focus {
 }
 
 a:focus {
-	outline: 3px solid $colour-orange;
+	outline: 3px solid $colour-yellow-500;
 	outline-offset: 0px;
 }

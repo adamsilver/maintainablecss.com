@@ -9,20 +9,25 @@
 	padding: $spacing-scale-2 $spacing-scale-3;
 	font-weight: bold;
 	text-align: center;
-	background-color: $colour-purple;
+	background-color: $colour-teal-700;
 	color: $colour-white;
+	border-radius: 5px;
 
 	margin-bottom: $spacing-scale-4;
+
+	box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06)!important;
+
 	@include mq($from: md) {
 		font-size: em(16);
 	}
 }
 
 .primaryLinkButton:hover {
-	background-color: $colour-purple-dark;
+	background-color: $colour-teal-800;
+	box-shadow: inset 0 2px 4px 0 rgba(0,0,0,.06)!important;
 }
 
 .primaryLinkButton:focus {
-	outline: 3px solid $colour-orange;
+	outline: 3px solid $colour-yellow-500;
 	outline-offset: 0px;
 }
