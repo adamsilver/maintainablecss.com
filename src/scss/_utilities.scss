@@ -3,5 +3,5 @@
 $browser-context: 16; // Default
 
 @function em($pixels, $context: $browser-context) {
-  @return #{math.div($pixels,$context)}em;
+  @return #{math.div($pixels, $context)}em;
 }
