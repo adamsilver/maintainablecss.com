@@ -1,34 +1,36 @@
+@use 'sass:math';
+
 $type: (
   xl: (
     base: (
       font-size: em(32),
-      line-height: 40/32
+      line-height: math.div(40,32)
     ),
     md: (
       font-size: em(48),
-		  line-height: 56/48
+		  line-height: math.div(56,48)
     )
   ),
 
   l: (
     base: (
       font-size: em(24),
-	    line-height: 32/24
+	    line-height: math.div(32,24)
     ),
     md: (
       font-size: em(32),
-		  line-height: 40/32
+		  line-height: math.div(40,32)
     )
   ),
 
   body: (
     base: (
       font-size: em(16),
-	    line-height: 24/16
+	    line-height: math.div(24,16)
     ),
     md: (
       font-size: em(20),
-		  line-height: 32/20
+		  line-height: math.div(32,20)
     )
   )
 
