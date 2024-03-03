@@ -37,10 +37,12 @@ Let's look at why semantic classes usually work best.
 
 Here's a real snippet of HTML using atomic classes:
 
-	<div class="pb3 pb4-ns pt4 pt5-ns mt4 black-70 fl-l w-50-l">
-	  <h1 class="f4 fw6 f1-ns lh-title measure mt0">Heading</h1>
-	  <p class="f5 f4-ns fw4 b measure dib-m lh-copy">Tagline</p>
-	</div>
+```
+<div class="pb3 pb4-ns pt4 pt5-ns mt4 black-70 fl-l w-50-l">
+	<h1 class="f4 fw6 f1-ns lh-title measure mt0">Heading</h1>
+	<p class="f5 f4-ns fw4 b measure dib-m lh-copy">Tagline</p>
+</div>
+```
 
 - Words are generally easier to understand than abbreviations which have to be understood and  interpreted before knowing what they stand for
 - It's unclear where the module begins and ends
@@ -51,10 +53,12 @@ Here's a real snippet of HTML using atomic classes:
 
 Here's the same HTML with semantic classes:
 
-	<div class="hero">
-	  <h1 class="hero-title">Heading</h1>
-	  <p class="hero-tagline">Tagline</p>
-	</div>
+```
+<div class="hero">
+	<h1 class="hero-title">Heading</h1>
+	<p class="hero-tagline">Tagline</p>
+</div>
+```
 
 - These classes are easy to read without needing to be interpreted
 - It's clear where the module begins and ends
@@ -72,10 +76,12 @@ Imagine coding a two-column responsive grid whereby:
 
 With non-semantic classes it may look like this:
 
-	<div class="grid clearfix">
-	  <div class="col pd20 pd50 fs2 fs3">Column 1</div>
-	  <div class="col pd20 pd50 fs2 fs3">Column 2</div>
-	</div>
+```
+<div class="grid clearfix">
+	<div class="col pd20 pd50 fs2 fs3">Column 1</div>
+	<div class="col pd20 pd50 fs2 fs3">Column 2</div>
+</div>
+```
 
 - There are 7 classes—some of which override each other
 - To make the columns work responsively we would need a `fs3large` class which means creating a naming convention that recreates language constructs already provided by CSS
@@ -83,10 +89,12 @@ With non-semantic classes it may look like this:
 
 With semantic classes it looks like this:
 
-	<div class="thing">
-	  <div class="thing-thingA"></div>
-	  <div class="thing-thingB"></div>
-	</div>
+```
+<div class="thing">
+	<div class="thing-thingA"></div>
+	<div class="thing-thingB"></div>
+</div>
+```
 
 - The classes are encapsulated to the module's design and content
 - It's easy to style elements without having to write a multiple classes and changing the HTML
@@ -147,7 +155,9 @@ On using the class attribute, HTML5 specs say in 3.2.5.7:
 
 Consider this HTML:
 
-	<a class="padding-left-20 red" href="#"></a>
+```
+<a class="padding-left-20 red" href="#"></a>
+```
 
 Changing the padding and colour on hover is a difficult task. Try to avoid having to fix self-induced problems like this.
 
