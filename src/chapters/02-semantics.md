@@ -17,15 +17,17 @@ Naming is the most important aspect of writing maintainable CSS. There are two m
 
 ## Semantic vs non-semantic
 
-	<!-- non semantic -->
-	<div class="red pull-left pb3">
-	<div class="grid row">
-	<div class="col-xs-4">
+```
+<!-- non semantic -->
+<div class="red pull-left pb3">
+<div class="grid row">
+<div class="col-xs-4">
 
-	<!-- semantic -->
-	<div class="basket">
-	<div class="product">
-	<div class="searchResults">
+<!-- semantic -->
+<div class="basket">
+<div class="product">
+<div class="searchResults">
+```
 
 Non-semantic classes don't convey *what* an element represents. At most they give you an idea of what an element *looks* like. Atomic, visual, behavioural and utility classes are all forms of non-semantic classes.
 
@@ -39,8 +41,8 @@ Here's a real snippet of HTML using atomic classes:
 
 ```
 <div class="pb3 pb4-ns pt4 pt5-ns mt4 black-70 fl-l w-50-l">
-	<h1 class="f4 fw6 f1-ns lh-title measure mt0">Heading</h1>
-	<p class="f5 f4-ns fw4 b measure dib-m lh-copy">Tagline</p>
+  <h1 class="f4 fw6 f1-ns lh-title measure mt0">Heading</h1>
+  <p class="f5 f4-ns fw4 b measure dib-m lh-copy">Tagline</p>
 </div>
 ```
 
@@ -55,8 +57,8 @@ Here's the same HTML with semantic classes:
 
 ```
 <div class="hero">
-	<h1 class="hero-title">Heading</h1>
-	<p class="hero-tagline">Tagline</p>
+  <h1 class="hero-title">Heading</h1>
+  <p class="hero-tagline">Tagline</p>
 </div>
 ```
 
@@ -78,8 +80,8 @@ With non-semantic classes it may look like this:
 
 ```
 <div class="grid clearfix">
-	<div class="col pd20 pd50 fs2 fs3">Column 1</div>
-	<div class="col pd20 pd50 fs2 fs3">Column 2</div>
+  <div class="col pd20 pd50 fs2 fs3">Column 1</div>
+  <div class="col pd20 pd50 fs2 fs3">Column 2</div>
 </div>
 ```
 
@@ -91,8 +93,8 @@ With semantic classes it looks like this:
 
 ```
 <div class="thing">
-	<div class="thing-thingA"></div>
-	<div class="thing-thingB"></div>
+  <div class="thing-thingA"></div>
+  <div class="thing-thingB"></div>
 </div>
 ```
 

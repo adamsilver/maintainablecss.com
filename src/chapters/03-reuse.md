@@ -19,10 +19,12 @@ Whilst we often try to abstract CSS too much too soon, there are obviously going
 
 If we want to reuse a style, one option would be to comma-delimit selectors inside a well-named file, which if you're into SASS is exactly what `@extend` does. For example, if multiple elements need red text, we could do this:
 
-	.someThing,
-	.anotherThing {
-	  color: red;
-	}
+```
+.someThing,
+.anotherThing {
+  color: red;
+}
+```
 
 This approach should be used for convenience, not for performance. (If the abstraction only has one rule, we're simply exchanging one line of code for another.)
 
