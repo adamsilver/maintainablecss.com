@@ -19,20 +19,24 @@ There are two approaches we can take, both of which complement the CSS approach 
 
 To do this, we would need to specify a module-specific state class to the constructor as follows:
 
-	var module1Collapser = new Collapser(element1, {
-	  cssHideClass: 'moduleA-isHidden'
-	});
+```
+var module1Collapser = new Collapser(element1, {
+  cssHideClass: 'moduleA-isHidden'
+});
 
-	var module2Collapser = new Collapser(element2, {
-	  cssHideClass: 'moduleB-isHidden'
-	});
+var module2Collapser = new Collapser(element2, {
+  cssHideClass: 'moduleB-isHidden'
+});
+```
 
 Then reuse the CSS styles as follows:
 
-	.moduleA-isHidden,
-	.moduleB-isHidden {
-      display: none;
-	}
+```
+.moduleA-isHidden,
+.moduleB-isHidden {
+  display: none;
+}
+```
 
 The trade-off is that this list could grow quickly (or use a mixin). And every time we add behavior, we need to update the CSS. A small change, but a change nonetheless. In this case we might consider a global state class.
 
@@ -40,14 +44,18 @@ The trade-off is that this list could grow quickly (or use a mixin). And every t
 
 If we find ourselves repeating the exact same set of styles for multiple modules, it might be better to use a global state class as follows:
 
-	.globalState-isHidden {
-      display: none;
-	}
+```
+.g`lobalState-isHidden {
+  display: none;
+}
+```
 
 This approach does away with the long comma-delimited list. And we no longer need to specify the module class when instantiating. This is because the global class will be referenced from within.
 
-	var module1Collapser = new Collapser(element1);
-	var module2Collapser = new Collapser(element2);
+```
+var module1Collapser = new Collapser(element1);
+var module2Collapser = new Collapser(element2);
+```
 
 However, this approach doesn't always make sense. We may have two different modules that *behave* the same, but *look* different, which is something we've discussed in [State](/chapters/state/).
 

@@ -15,45 +15,53 @@ Take an e-commerce site whereby each category has a unique background image in t
 
 The boys category would have a modifier as follows:
 
-	<div class="categoryHeader categoryHeader--boys">
+```
+<div class="categoryHeader categoryHeader--boys">
+```
 
 And similarly, the girls category would have a *girls* modifier:
 
-	<div class="categoryHeader categoryHeader--girls">
+```
+<div class="categoryHeader categoryHeader--girls">
+```
 
 The CSS would be:
 
-	.categoryHeader {
-	  padding-top: 50px;
-	  padding-bottom: 50px;
-	  /* etc */
-	}
+```
+.categoryHeader {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* etc */
+}
 
-	.categoryHeader--boys {
-	  background-image: url(/path/to/boys.jpg);
-	}
+.categoryHeader--boys {
+  background-image: url(/path/to/boys.jpg);
+}
 
-	.categoryHeader--girls {
-	  background-image: url(/path/to/girls.jpg);
-	}
+.categoryHeader--girls {
+  background-image: url(/path/to/girls.jpg);
+}
+```
 
 Because the differences are small and well understood, this type of reuse is more maintainable.
 
 We can use the same approach for buttons. Most sites have a primary and secondary button style. If all that changes is one or two styles we can have a modifier for primary and secondary buttons as follows:
 
-	.button {
-	  padding: 20px;
-	  border-radius: 3px;
-	  /* etc */
-	}
+```
+.button {
+  padding: 20px;
+  border-radius: 3px;
+  /* etc */
+}
 
-	.button--primary {
-	  background-color: green;
-	}
+.button--primary {
+  background-color: green;
+}
 
-	.button--secondary {
-	  background-color: #eee;
-	}
+.button--secondary {
+  background-color: #eee;
+}
+```
 
 Again, this only works because the differences are well contained and well understood.
 

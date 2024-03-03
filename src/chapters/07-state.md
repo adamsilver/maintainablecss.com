@@ -20,13 +20,17 @@ Quite often, particularly with richer user interfaces, styling needs to be appli
 
 To represent state we need an additional class which should be added to the module (or component) element to which it pertains. For example, if our basket module needs a gray background when it's empty, the HTML should be:
 
-	<div class="basket basket-isEmpty">
+```
+<div class="basket basket-isEmpty">
+```
 
 And the CSS should be:
 
-	.basket-isEmpty {
-      background-color: #eee;
-	}
+```
+.basket-isEmpty {
+  background-color: #eee;
+}
+```
 
 The class name is prefixed with the module (or component) because whilst states might be common, associated styles might not. For example, an empty *basket* has a gray background, where as an empty search has an absolutely-positioned image.
 

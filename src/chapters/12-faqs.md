@@ -16,16 +16,20 @@ Yes but please cite the original (that's this site) and let me know.
 
 Ideally our semantic HTML matches the integrity of the visual design. Meaning that we would hope that all `h1`s are identical. In this case we can declare the following CSS:
 
-	h1 {
-      /* etc */
-	}
+```
+h1 {
+  /* etc */
+}
+```
 
 However, this is rarely the case, in commercial, large-scale websites. In this case we should encapsulate styles to the module in question:
 
-	.module-heading {
-	  font-size: ...;
-	  color: ...;
-	}
+```
+.module-heading {
+font-size: ...;
+color: ...;
+}
+```
 
 <!--## Where do I put media queries?
 

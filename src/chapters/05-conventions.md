@@ -11,18 +11,22 @@ next:
 
 *MaintainableCSS* has the following convention:
 
-	.<module>[-<component>][-<state>] {}
+```
+.<module>[-<component>][-<state>] {}
+```
 
 Square brackets are optional depending on the module in question. Here are some examples:
 
-	/* Module container */
-	.searchResults {}
+```
+/* Module container */
+.searchResults {}
 
-	/* Component */
-	.searchResults-heading {}
+/* Component */
+.searchResults-heading {}
 
-	/* State */
-	.searchResults-isLoading {}
+/* State */
+.searchResults-isLoading {}
+```
 
 Notes:
 
@@ -38,16 +42,20 @@ No. You can write `.searchResults p` if you want to. And sometimes you may have 
 
 Good question. Here's some HTML without a prefix:
 
-	<div class="basket">
-	  <div class="heading">
+```
+<div class="basket">
+  <div class="heading">
+```
 
 And the CSS:
 
-	/* module */
-	.basket {}
+```
+/* module */
+.basket {}
 
-	/* heading component of basket module */
-	.basket .heading {}
+/* heading component of basket module */
+.basket .heading {}
+```
 
 There are two problems:
 

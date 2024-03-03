@@ -43,23 +43,27 @@ We'll simplify this basket for brevity. Each product within the basket will disp
 
 The basket template might be:
 
-    <div class="basket">
-	    <h1 class="basket-title">Your basket</h1>
-	    <div class="basket-item">
-	      <h3 class="basket-productTitle">Product title</h3>
-	      <form>
-	        <input type="submit" class="basket-removeButton" value="Remove">
-	      </form>
-	    </div>
-    </div>
+```
+<div class="basket">
+  <h1 class="basket-title">Your basket</h1>
+  <div class="basket-item">
+    <h3 class="basket-productTitle">Product title</h3>
+    <form>
+      <input type="submit" class="basket-removeButton" value="Remove">
+    </form>
+  </div>
+</div>
+```
 
 And the CSS would be:
 
-		.basket {}
-		.basket-title {}
-		.basket-item {}
-		.basket-productTitle {}
-		.basket-removeButton {}
+```
+.basket {}
+.basket-title {}
+.basket-item {}
+.basket-productTitle {}
+.basket-removeButton {}
+```
 
 ## 2. Creating an order summary module
 
@@ -73,17 +77,21 @@ If we try to combine them we'll entangle two modules with display logic and CSS 
 
 Instead, we should create a new module with the following template:
 
-	<div class="orderSummary">
-	  <h2 class="orderSummary-title">Order summary</h2>
-	  <div class="orderSummary-item">...</div>
-	  <div class="orderSummary-item">...</div>
-	</div>
+```
+<div class="orderSummary">
+  <h2 class="orderSummary-title">Order summary</h2>
+  <div class="orderSummary-item">...</div>
+  <div class="orderSummary-item">...</div>
+</div>
+```
 
 And the CSS would be:
 
-	.orderSummary {}
-	.orderSummary-title {}
-	.orderSummary-item {}
+```
+.orderSummary {}
+.orderSummary-title {}
+.orderSummary-item {}
+```
 
 As counterintuitive as this may seem, duplication is a better prospect. And, this is not really duplication. Duplication is copying the *same* thing. These two modules might look similar but they are not the same.
 
@@ -97,11 +105,15 @@ Buttons are an example of something that we want to reuse in lots of places, and
 
 One option would be to upgrade the button component into a module as follows:
 
-	<input class="button" type="submit" value="{%raw%}{{text}}{%endraw%}">
+```
+<input class="button" type="submit" value="{%raw%}{{text}}{%endraw%}">
+```
 
 And the CSS would be:
 
-	.button {}
+```
+.button {}
+```
 
 The problem is that buttons often have slightly different positioning, sizing and spacing depending on context. And of course there are media queries to consider.
 
@@ -113,38 +125,46 @@ And so, because of these differences, it's tricky to abstract the common rules b
 
 To avoid these problems, we can use a mixin or comma-delimit the common rules that aren't affected by their context. For example:
 
-	.basket-removeButton,
-	.another-loginButton,
-	.another-deleteButton {
-      background-color: green;
-      padding: 10px;
-      color: #fff;
-	}
+```
+.basket-removeButton,
+.another-loginButton,
+.another-deleteButton {
+  background-color: green;
+  padding: 10px;
+  color: #fff;
+}
+```
 
 Notice that in this example, we don't specify `float`, `margin` or `width` etc. Those styles are applied to the unique button:
 
-	.basket-removeButton {
-	  float: right;
-	}
+```
+.basket-removeButton {
+  float: right;
+}
 
-	.another-deleteButton {
-	  margin-bottom: 10px;
-	}
+.another-deleteButton {
+  margin-bottom: 10px;
+}
+```
 
 This seems sensible as it means we can opt in to these common styles. The opposite, of course being having to override. But there's another, third option.
 
 Imagine a checkout flow whereby each page has a continue button and a link to the previous step. We can reuse this by upgrading it into a module:
 
-	<div class="checkoutActions">
-	  <input class="checkoutActions-continue">
-	  <a class="checkoutActions-back"></a>
-	</div>
+```
+<div class="checkoutActions">
+  <input class="checkoutActions-continue">
+  <a class="checkoutActions-back"></a>
+</div>
+```
 
 And the CSS would be:
 
-	.checkoutActions-continue { }
+```
+.checkoutActions-continue { }
 
-	.checkoutActions-back { }
+.checkoutActions-back { }
+```
 
 In doing this, we abstracted and applied the styles to a well understood `.checkoutActions` module. And we've done this without affecting similar, but not identical buttons.
 

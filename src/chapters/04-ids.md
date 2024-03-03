@@ -18,31 +18,39 @@ To demonstrate the problem, let's override the colour of an element from *red* t
 
 Here's the HTML:
 
-	<div id="module" class="module-override">
+```
+<div id="module" class="module-override">
+```
 
 And the CSS:
 
-	#module {
-	  color: red;
-	}
+```
+#module {
+  color: red;
+}
 
-	.module-override {
-	  color: blue;
-	}
+.module-override {
+  color: blue;
+}
+```
 
 The element will be red even though the override class declares blue. Let's fix this by swapping the ID for a class:
 
-	<div class="module module-override">
+```
+<div class="module module-override">
+```
 
 And the CSS:
 
-	.module {
-	  color: red;
-	}
+```
+.module {
+  color: red;
+}
 
-	.module-override {
-	  color: blue;
-	}
+.module-override {
+  color: blue;
+}
+```
 
 Now, the element is blue&mdash;problem solved.
 
